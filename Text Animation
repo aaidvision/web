@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #text-container {
+            font-size: 10pt;
+            color: red;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="text-container">TEXT-GROWING</div>
+    <script>
+        const textContainer = document.getElementById('text-container');
+        let fontSize = 10; // Initial font size
+        let growing = true; // State of whether the text is growing or shrinking
+
+        function updateText() {
+            if (growing) {
+                fontSize += 1;
+                if (fontSize >= 50) {
+                    growing = false;
+                    textContainer.textContent = 'TEXT-SHRINKING';
+                    textContainer.style.color = 'blue';
+                }
+            } else {
+                fontSize -= 1;
+                if (fontSize <= 5) {
+                    growing = true;
+                    textContainer.textContent = 'TEXT-GROWING';
+                    textContainer.style.color = 'red';
+                }
+            }
+            textContainer.style.fontSize = `${fontSize}pt`;
+        }
+
+        setInterval(updateText, 100);
+    </script>
+</body>
+</html>
