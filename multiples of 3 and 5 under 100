@@ -1,0 +1,22 @@
+<html>
+<head>
+   <title>Sum the multiples of 3 and 5 under 100</title>
+<h1> To find the Sum of multiples of 3 and 5 under 100</h1>
+  <script type="text/javascript">
+     var sum = 0;
+var number = 100;
+for (var i = 0; i <= number; i++) 
+{
+    if (i % 3 == 0 || i % 5 == 0)
+ {
+        
+        sum += i;
+    }
+}
+
+document.write("The Sum is "+sum);
+  </script>
+</head>
+<body>
+</body>
+</html>
