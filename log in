@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+         Creation of Login form  using HTML
+    </title>
+</head>
+<body style="text-align:center;">
+    <h1 style="color:green;">
+        Login Form 
+    </h1>
+    <h2>
+        Creation of Login form  using HTML
+    <form>
+        <label>Username : </label>   
+            <input type="text"  name="username" required>  <br><br>
+            <label>Password : </label>   
+            <input type="password"  name="password" required>  
+        <br><br>
+        <input type="submit" onclick="check(this.form)" value="Submit">
+        <input type="reset">
+    </form>
+<script language="javascript">
+function check(form)
+{
+	alert("Logged in Successfully")}
+</script></body></html>
