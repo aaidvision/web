@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Catalogue page in html</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<table align="center">
+<caption>Catalogue Page for Samsung Phones</caption>
+  <tr bgcolor="lightblue">
+    <th>Code</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1234</td>
+    <td>Samsung Galaxy</td>
+    <td>12999</td>
+    <td><img src="image.jpg" alt="Samsung" width="75" height="75"</td>
+      </tr>
+  </table>
+</body>
+</html>
